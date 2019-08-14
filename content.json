@@ -1,0 +1,215 @@
+{
+
+  "repromptIntro" : [
+    { "p": "", "d": 1 },
+    { "p": "So. ", "d": 3 },
+    { "p": "Well? ", "d": 4 },
+    { "p": "Well then, ", "d": 2 }
+  ],
+  
+  "standardEncouragement": [
+    { "p": "", "d": 4, "l": 1 },
+    { "p": "Correct. ", "d": 5, "l": 2 },
+    { "p": "That's right. ", "d": 2, "l": 3 },
+    { "p": "That's correct. ", "d": 3, "l": 2 },
+    { "p": "Exactly. ", "d": 2, "l": 3 },
+    { "p": "Good job. ", "d": 3, "l": 3 }
+  ],
+
+  "hintIntro": [
+    { "p": "Well,<break time='200ms'/> ", "d": 3, "l": 3},
+    { "p": "Let me give you a hint,<break time='400ms'/> ", "d": 3, "l": 3}, 
+    { "p": "Here's a tip,<break time='400ms'/> ", "d": 1, "l": 3},
+    { "p": "Here's a little trick,<break time='400ms'/> ", "d": 2, "l": 3},
+    { "p": "This may help,<break time='400ms'/> ", "d": 1, "l": 3},
+    { "p": "Let's see,<break time='400ms'/> ", "d": 3, "l": 3},
+    { "p": "It's easy,<break time='400ms'/> ", "d": 5, "l": 1},
+    { "p": "It's not that hard,<break time='400ms'/> ", "d": 3, "l": 2}
+  ],
+
+  "postHintEncouragement": [
+    { "p": "That's it,", "d": 3, "l": 1 },
+    { "p": "Exactly. Good job!", "d": 3, "l": 2 },
+    { "p": "Great job!", "d": 4, "l": 1 },
+    { "p": "See? That wasn't that hard.", "d": 5, "l": 3 },
+    { "p": "Yes! You got it,", "d": 3, "l": 2 },
+    { "p": "<say-as interpret-as='interjection'>uh huh</say-as>, that's correct.", "d": 2, "l": 2 }
+  ],
+
+  "wrongAnswer": [
+    { "p": "", "d": 8, "l": 1 },
+    { "p": "Incorrect. ", "d": 4, "l": 1 },
+    { "p": "Oopsy, ", "d": 3, "l": 2 },
+    { "p": "Uh oh, ", "d": 2, "l": 3 },
+    { "p": "Nope? ", "d": 1, "l": 1 },
+    { "p": "Wrong, ", "d": 1, "l": 1 },
+    { "p": "Nah, ", "d": 1, "l": 2 },
+    { "p": "Sorry, ", "d": 3, "l": 3 }
+  ],
+
+  "sayAgain": [
+    { "p": "Sorry?", "d": 8 },
+    { "p": "Say again?", "d": 5 },
+    { "p": "Pardon?", "d": 2 },
+    { "p": "Come again?", "d": 3 }
+  ],
+
+  "whatDoYouMean": [
+    { "p": "I didn't quite get that. ", "d": 7 },
+    { "p": "I'm not sure what you mean. ", "d": 8 },
+    { "p": "I'm having trouble understanding you. ", "d": 5 }
+  ],
+
+  "byeBye": [
+    "Until next time.",
+    "Bye for now.",
+    "Bye-<prosody pitch='-10%'>bye</prosody>.",
+    "Talk to you later."
+  ],
+
+  "closingAsNo": [
+    "Right. I'll take that as an no. ",
+    "Hmm, sounds like not. ",
+    "Oh well. Doesn't seem like it. "
+  ],
+
+  "closingAsNone": [
+    "Hmm, sounds like none of them. ",
+    "Well? Doesn't seem like any of them. "
+  ],
+
+  "likeWantShall": [
+    " would you like to ",
+    " do you want to ",
+    " shall we "
+  ],
+
+	"what": [
+		{ "p": "what is", "d": 3 },
+		{ "p": "how much is", "d": 1 },
+		{ "p": "what's", "d": 2 }
+	],
+
+	"and": [
+		{ "p": "and ", "d": 3 },
+		{ "p": "and what about ", "d": 1 }
+	],
+	
+	"now": [
+		{ "p": "", "d": 7 },
+		{ "p": "Now. ", "d": 4 },
+		{ "p": "OK. ", "d": 2 }
+	],
+
+	"multiplicationQuestions": [
+		{ "p": "{#what} {1} times {0}", "d": 4, "opening": true, "repeat": true },
+		{ "p": "{#and}{1} times {0}", "d": 9, "continous": true, "repeat": true },
+		{ "p": "and {#what} {1} times {0}", "d": 6, "continous": true },             
+		{ "p": "what about {1} times {0}", "d": 2 },
+
+		{ "p": "{#and}{0} multiplied by {1}?", "d": 7, "continous": true },
+		{ "p": "and {#what} {0} multiplied by {1}", "d": 4, "continous": true },            
+		{ "p": "{#what} {0} multiplied by {1}", "d": 3, "opening": true },
+		{ "p": "what about {0} multiplied by {1}", "d": 1 },
+
+		{ "p": "and what do you get by multiplying {0} by {1}", "d": 2, "continous": true },
+		{ "p": "what do you get by multiplying {0} and {1}", "d": 1, "opening": true }
+	],
+ 
+	"divisionQuestions": [
+		{ "p": "{#what} {1} divided by {0}", "d": 4, "opening": true, "repeat": true },
+		{ "p": "{#and}{1} divided by {0}", "d": 7, "continous": true, "repeat": true },
+		{ "p": "and {#what} {1} divided by {0}", "d": 5, "continous": true },
+		{ "p": "what about {1} divided by {0}", "d": 2 },
+
+		{ "p": "and how many times goes {0} into {1}", "d": 6, "continous": true },
+		{ "p": "how many times goes {0} into {1}", "d": 4, "opening": true },
+		{ "p": "and what do you get when dividing {1} by {0}", "d": 2, "continous": true },
+		{ "p": "what do you get when dividing {1} by {0}", "d": 1, "opening": true }
+	],
+
+  "storyLinking": [
+    { "p": "<break time='500ms'/>", "d": 2 },
+    { "p": "<break time='300ms'/>Now.<break time='300ms'/>", "d": 2 },
+    { "p": "<break time='300ms'/>OK,<break time='200ms'/>", "d": 3 },
+    { "p": "<break time='300ms'/>Try this.<break time='300ms'/>", "d": 5 },
+    { "p": "<break time='300ms'/>Let's say,", "d": 3 },
+    { "p": "<break time='400ms'/>What about this:<break time='300ms'/>", "d": 4 },
+    { "p": "<break time='400ms'/>Listen carefully:<break time='300ms'/>", "d": 3 }
+  ],
+
+  "femaleFamily": ["Grandma", "Aunt Mary", "Aunt Betty"],
+  "femaleName": ["Marcia", "Lily", "Veronica", "Sheila", "Janet"],
+  "maleFamily": ["Grandpa", "Uncle George", "Uncle John"],
+  "maleName": ["Max", "Peter", "Jack", "Shaun", "Paul"],
+  "foodMaking": ["pancakes", "tacos", "doughnuts"],
+  "foodBaking": ["scones", "cup cakes", "brownies", "muffins"],
+  "seedlings": ["strawberries", "tomato", "carrots", "cucumber"],
+  "workplace": ["bakery", "flower shop", "cafe", "restaurant"],
+  "properties": ["castles", "horses", "swords"],
+  "lego": ["house", "robot", "rocket", "crane", "tower"],
+
+  "stories": [
+    { "m": "{#femaleFamily} has {1} hens in her hen house. If each of them lays {0} eggs per week, how many eggs can she collect each week?", 
+      "d": "{#maleFamily} collects {1} eggs each week from his hen house. Each of his hens lays {0} eggs per week. How many hens does he have?", 
+      "factors": [3,4,5,6], "min": 3 },
+    { "m": "{0} dwarfs, are helping Snow White clean the castle. If each cleans {1} rooms, how many rooms are there in the castle?", 
+      "d": "{0} dwarfs, helped Snow White clean all {1} rooms in the castle. How many rooms did each of them clean?", 
+      "factors": [7], "min": 2, "max": 6, "post": "high<prosody pitch='high'>ho</prosody>, high ho" },
+    { "m": "If it takes {0} Lego cubes to build a {#lego}, how many cubes do you need for {1} {#lego}s?", 
+      "d": "{#femaleName} has used {1} Lego cubes to build {#lego}s. If each {#lego} takes {0} cubes to build, how many did she make?", 
+      "factors": [8,9,10,11,12,13,14,15,16], "min": 2, "max": 10 },
+    { "m": "A spaceship with a warp drive, can cross a distance of {0} light years in a day. How far into space can it get after {1} days?", 
+      "d": "A spaceship with a warp drive, is traveling at a speed of {0} light years per day. How long before it reaches an outpost, which is {1} light years away?", 
+      "factors": [3,4,5,6,7], "min": 4, "much": "both" },
+    { "m": "Once there was a king, who had {0} sons. When he died he left {1} {#properties} to each of them. How many {#properties} did he own?", 
+      "d": "When the old king died, he left {1} {#properties} to his {0} sons. How many {#properties} did each of them get?", 
+      "factors": [3], "min": 2, "max": 7, "post": "Long live the king!" },
+    { "m": "{#femaleName} is working at a {#workplace}, where she earns {1} dollars per hour. If she works {0} hours per day, how much does she earn in a day?", 
+      "d": "{#maleName} works {0} hours a day at a {#workplace}, earning {1} dollars per day. How much is he paid per hour?", 
+      "factors": [3,4,5,6,7,8], "min": 7, "much": "both" },
+    { "m": "An Italian restaurant has {1} square tables, with {0} chairs each. How many guests can it accomodate?", 
+      "d": "An Italian restaurant can seat {1} guests, at square tables with {0} chairs each. How many tables in this restaurant?", 
+      "factors": [4], "min": 6 },
+    { "m": "A Greek restaurant has {1} long tables, with {0} chairs each. How many guests can it accomodate?", 
+      "d": "A Greek restaurant can seat {1} guests, at long tables with {0} chairs each. How many tables in this restaurant?", 
+      "factors": [6,8,10,12,14], "min": 4 },
+    { "m": "A Chinese restaurant has {1} round tables, with {0} chairs each. How many guests can it accomodate?", 
+      "d": "A Chinese restaurant can seat {1} guests, at round tables with {0} chairs each. How many tables in this restaurant?", 
+      "factors": [5,6,7,8], "min": 5 },
+    { "m": "Jack and Jill, went up the hill {1} times, to fetch a pail of water holding {0} pints. As Jack never fell down, how many pints of water did they bring?", 
+      "d": "Jack and Jill, brought down the hill {1} pints of water, in a pail holding {0} pints. How many times did Jack and Jill go up the hill?", 
+      "factors": [4,5,6,7,8,9], "min": 3, "post": "They must be <prosody pitch='high' volume='+2dB'>tired</prosody>", "postMin": 50 },
+    { "m": "{#femaleFamily} is making {#foodMaking} for the family of {1}. How many does she need to make, if they all eat {0} {#foodMaking} each?", 
+      "d": "{#maleFamily} is making {1} {#foodMaking}, {0} for each family member. How many family members are there?", 
+      "factors": [2,3,4], "min": 3, "post": "<say-as interpret-as='interjection'>Yum!</say-as>" },
+    { "m": "{#maleFamily} is baking {#foodBaking} for the family of {1}. How many does he need to bake, if they all eat {0} {#foodBaking} each?", 
+      "d": "{#femaleFamily} is baking {1} {#foodBaking}, {0} for each family member. How many family members are there?", 
+      "factors": [3,4,5,6], "min": 3, "post": "<say-as interpret-as='interjection'>Yum!</say-as>" },
+    { "m": "{#maleName} has ordered {1} pizzas, each cut into {0} slices. If each of his guests gets a slice, how many guests are there?", 
+      "d": "{#femaleName} has ordered pizza for her {1} guests. Each pizza is cut into {0} slices. How many pizzas should she order, so that everyone gets a slice?", 
+      "factors": [4,6,8], "min": 2, "post": "What a party!", "postMin": 40 },
+    { "m": "{#maleName} has ordered {1} cakes, each cut into {0} slices. If each of his guests gets a slice, how many guests are there?", 
+      "d": "{#femaleName} has ordered cakes for her {1} guests. Each cake will be cut into {0} slices. How many cakes should she order, so that everyone gets a slice?", 
+      "factors": [6,8,12,16], "min": 2, "max": 5, "post": "What a party!", "postMin": 40 },
+    { "m": "{#femaleFamily} is planting {#seedlings}. She wants to plant {0} rows, with {1} seedlings in each row. How many seedlings does she need to buy?", 
+      "d": "{#maleFamily} is planting {#seedlings}. He bought {1} seedlings, and wants to plant them in {0} rows. How many seedlings per row?", 
+      "factors": [2,3,4,5,6,7,8,9,10], "min": 6 },
+    { "m": "{#maleFamily} is fixing the roof. He needs to replace {1} shingles. If each costs {0} dollars, how much will he spend on shingles?", 
+      "d": "{#maleFamily} is fixing the roof. He's spent {1} dollars on new shingles. If each shingle costs {0} dollars, how many has he bought?", 
+      "factors": [6,7,8,9,10,11,12,13,14,15,16], "min": 3, "post": "That's expensive.", "postMin": 50, "much": "multiplication" },
+    { "m": "{#femaleFamily} is tiling the terrace, with 1 foot by 1 foot square tiles. How many tiles does she need for her terrace, measuring {0} by {1} feet?", 
+      "d": "{#maleFamily} is tiling his terrace, with {1} square tiles, measuring 1 foot by 1 foot. How much is the width of the terrace in feet, if it's {0} feet long?", 
+      "factors": [7,8,9,10,11,12,13,14,15,16], "min": 5, "post": "What a great entertaining space.", "postMin": 150, "much": "division" },
+    { "m": "It takes {#femaleName} {1} hours, to ride her bike to the nearest town. How far is that town, if she rides at {0} kilometers per hour?", 
+      "d": "{#maleName} rides a bike to the nearest town, which is {1} kilometers away. How long does it take him to get there, if he rides at {0} kilometers per hour?", 
+      "factors": [7,8,9,10,11,12,13,14,15,16], "min": 2, "max": 4, "post": "What a workout!", "postMin": 30, "much": "both" },
+    { "m": "Spaceship has {1} escape pods, with space for {0} passengers each. How many astronauts can safely board this spaceship?", 
+      "d": "Spaceship with a crew of {1} astronauts has escape pods, with space for {0} passengers each. How many escape pods does it need, for all the astronauts?", 
+      "factors": [2,3,4,5,6], "min": 2},
+    { "m": "{0} pirates have dug out a chest full of gold coins. After counting and grunting, each got a fair share of {1} coins. How many coins were in the chest?", 
+      "d": "{0} pirates have dug out a chest containing {1} gold coins. After counting and grunting, they split them into equal shares. How much did each of them get?", 
+      "factors": [5,6,7,8,9,10,11,12,13,14,15,16], "min": 5, "post": "What a treasure!", "postMin": 60, "much": "division" }
+  ]
+
+}
